@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <style>
+        /* css reset */
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my style */
+        body {
+            background-color: #010101;
+        }
+        .container {
+            background-image: url(img/banner.jpg);
+            width: 1536px;
+            height: 275px;
+        }
+        .main {
+            display: flex; 
+            justify-content: space-around;
+        }
+        .text {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            color: #ECECEC;
+            letter-spacing: 1px;
+        }
+        span {
+            font-size: 20px;
+            color: #FF3535;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="">
+    </div>
+
+    <div class="w3-bar w3-card-4" style="background-color:#066163; height: 45px; display: flex; text-align: center; border-bottom: 2px #b6895b solid;">
+        <button class="w3-bar-item w3-button" style="color: #ECECEC; font-family: 'poppins',sans-serif; font-size: 18px; font-weight: 650;" onclick="openImg('Cryptocurrency')">Cryptocurrency</button>
+        <button class="w3-bar-item w3-button" style="color: #ECECEC; font-family: 'poppins',sans-serif; font-size: 18px; font-weight: 650;" onclick="openImg('Blockchain system')">Blockchain system</button>
+        <button class="w3-bar-item w3-button" style="color: #ECECEC; font-family: 'poppins',sans-serif; font-size: 18px; font-weight: 650;" onclick="openImg('Bitcoin')">Bitcoin</button>
+        <button class="w3-bar-item w3-button" style="color: #ECECEC; font-family: 'poppins',sans-serif; font-size: 18px; font-weight: 650;"onclick="openImg('Altcoin')">Altcoin</button>
+        <button class="w3-bar-item w3-button" style="color: #ECECEC; font-family: 'poppins',sans-serif; font-size: 18px; font-weight: 650;"onclick="openImg('Profile')">Profile</button>
+    </div>
+    <br>
+    
+    <div id="Cryptocurrency" class="w3-container kota w3-animate-fading" style="display: none; margin: 0 60px 0 20px; padding: 10px;">
+        <div class="main">
+            <img src="img/crypto.png" style="margin-right: 10px;">
+            <div><h2 class="text"><span>Cryptocurrency</span> adalah bentuk mata uang digital yang menggunakan kriptografi untuk keamanan transaksi, mengendalikan penciptaan unit tambahan, dan mengelola transfer aset. Berbeda dengan mata uang tradisional yang dikeluarkan oleh pemerintah atau bank sentral, cryptocurrency beroperasi di dalam jaringan terdesentralisasi yang disebut blockchain.</h2></div>
+        </div>
+    </div>
+
+    <div id="Blockchain system" class="w3-container kota w3-animate-bottom" style="display: none; margin: 0 100px 0 20px; padding: 10px;">
+        <div class="main">
+            <img src="img/blockchain.jpg" style="margin-right: 10px;">
+            <div><h2 class="text"><span>Blockchain</span> adalah sistem distribusi database yang memanfaatkan kriptografi untuk membuat rantai blok terhubung satu sama lain. Setiap blok berisi transaksi, tersebar di node-node desentralisasi, dan diamankan melalui konsensus. Keamanan, transparansi, dan irreversibilitas transaksi adalah fitur utamanya. Contoh blockchain terkenal adalah Bitcoin dan Ethereum.</h2></div>
+        </div>
+    </div>
+
+    <div id="Bitcoin" class="w3-container kota w3-animate-top" style="display: none; margin: 0 100px 0 20px; padding: 10px;">
+        <div class="main">
+            <img src="img/bitcoin.jpg" style="margin-right: 10px;">
+            <div><h2 class="text"><span>Bitcoin (BTC)</span> adalah mata uang kripto / mata uang virtual yang dirancang untuk bertindak sebagai uang dan bentuk pembayaran di luar kendali seseorang, kelompok, atau entitas mana pun, sehingga menghilangkan kebutuhan akan keterlibatan pihak ketiga dalam transaksi keuangan. Ini diberikan kepada penambang blockchain karena memverifikasi transaksi dan dapat dibeli di beberapa bursa.</h2></div>
+        </div>
+    </div>
+
+    <div id="Altcoin" class="w3-container kota w3-animate-zoom" style="display: none; margin: 0 100px 0 20px; padding: 10px;">
+        <div class="main">
+            <img src="img/altcoin.png" style="margin-right: 10px;">
+            <div><h2 class="text"><span>Altcoin</span> adalah istilah yang digunakan untuk merujuk pada semua cryptocurrency selain Bitcoin. Kata "Altcoin" sendiri merupakan singkatan dari "alternative coin" atau mata uang kripto alternatif. Altcoin mencakup berbagai jenis cryptocurrency yang diluncurkan setelah Bitcoin, dengan tujuan memberikan alternatif atau perbaikan terhadap berbagai aspek teknis, keamanan, atau fungsionalitas yang dimiliki oleh Bitcoin. Contoh-altcoin meliputi Ethereum (ETH), Ripple (XRP), Litecoin (LTC), dan banyak lagi. </h2></div>
+        </div>
+    </div>
+
+
+    <div id="Altcoin" class="w3-container kota w3-animate-zoom" style="display: none;">
+        <img src="img/altcoin.png">
+    </div>
+    <div id="Profile" class="w3-container kota w3-animate-zoom" style="display: none;">
+            <center>
+                <h1 class="text">PROFILE SAYA</h1>
+                <br>
+                <br>
+                <table>
+                    <h5>
+                        <tr>
+                            <td class="text">NIM
+                            <td class="text">:10123288
+                        <tr>
+                            <td class="text">NAMA
+                            <td class="text">:M.GILANG ROMADHON
+                        <tr>
+                            <td class="text">KELAS
+                            <td class="text">:IF 7
+                    </h5>
+                </table>
+            </center>
+    </div>
+    
+
+</body>
+<script>
+    function openImg(namakota) {
+        var i;
+        var x = document.getElementsByClassName("kota");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namakota).style.display = "block";
+    }
+
+</script>
+
+</script>
+</html>
